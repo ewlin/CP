@@ -2,9 +2,7 @@ function range (stop, start = 0, step = 1) {
     let range = [],
         currentVal = start;
     
-    if (!stop) {
-        throw new Error('range must include a stop value!');
-    }
+    if (!stop) throw new Error('range must include a stop value!');
     
     while (currentVal < stop) {
         range.push(currentVal);
@@ -19,11 +17,11 @@ function cracklePop() {
         
         let output = ""; 
         
-        if (num%3 == 0) {
+        if (num % 3 == 0) {
             output += 'Crackle'; 
         }
         
-        if (num%5 == 0) {
+        if (num % 5 == 0) {
             output += 'Pop';  
         } else if (!output) {
             output = num; 
@@ -34,4 +32,3 @@ function cracklePop() {
 }
 
 cracklePop(); 
-
