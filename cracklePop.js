@@ -4,7 +4,7 @@ function range (stop, start = 0, step = 1) {
     
     if (!stop) throw new Error('range must include a stop value!');
     
-    while (currentVal < stop) {
+    while (currentVal <= stop) {
         range.push(currentVal);
         currentVal += step;
     }
@@ -12,8 +12,9 @@ function range (stop, start = 0, step = 1) {
     return range; 
 }
 
+
 function cracklePop() {
-    range(101,1).forEach(function(num){
+    range(100,1).forEach(function(num){
         
         let output = ""; 
         
@@ -32,3 +33,4 @@ function cracklePop() {
 }
 
 cracklePop(); 
+
