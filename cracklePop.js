@@ -1,4 +1,4 @@
-function range (stop, start = 0, step = 1) {
+function range(stop, start = 0, step = 1) {
     let range = [],
         currentVal = start;
     
